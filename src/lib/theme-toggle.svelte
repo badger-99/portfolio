@@ -9,7 +9,7 @@
 
 <button
 onclick={toggleMode}
-class="p-1 transition-colors duration-200 rounded-md cursor-pointer ml-auto"
+class="p-1 transition-colors duration-200 rounded-md cursor-pointer"
 aria-label='Toggle Theme'>
   {#if isDark}
   <Moon

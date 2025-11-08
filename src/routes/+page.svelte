@@ -1,4 +1,4 @@
-<main class="mt-14 px-2 h-fit flex-1 flex flex-col">
+<main class="mt-14 px-2 h-fit flex-1 flex flex-col snap-y snap-mandatory">
   <section id="hero">
     <div>
       <h1>Alfred Makongoro</h1>
@@ -32,5 +32,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid;
+    scroll-snap-align: start;
+    scroll-margin-top: calc(var(--spacing) * 14) /* 3.5rem = 56px */;
   }
 </style>

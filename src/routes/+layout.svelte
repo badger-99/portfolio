@@ -11,7 +11,14 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<nav class='flex flex-row p-2 borde fixed w-full h-14 top-0 left-0'>
+<nav class='flex flex-row p-2 fixed w-full h-14 top-0 left-0 justify-between'>
+	<div><a href="#hero">{"<A/>"}</a></div>
+	<div class="flex flex-row gap-2">
+		<a href="#hero" class="hover:underline">Home</a>
+		<a href="#about" class="hover:underline">About</a>
+		<a href="#projects" class="hover:underline">Projects</a>
+		<a href="#contact" class="hover:underline">Contact</a>
+	</div>
 	<ThemeToggle />
 </nav>
 
