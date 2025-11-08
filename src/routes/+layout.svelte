@@ -13,7 +13,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<nav class='flex flex-row p-2 fixed w-full h-14 top-0 left-0 justify-between'>
+<nav class='flex flex-row p-2 fixed w-full h-14 top-0 left-0 justify-between items-center'>
 	<div><a href="#hero">{"<A/>"}</a></div>
 	<div class="flex flex-row gap-2">
 		<a href="#hero" class="hover:underline">Home</a>
