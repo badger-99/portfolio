@@ -11,7 +11,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<nav class='mb-4 flex flex-row'>
+<nav class='flex flex-row p-2 borde fixed w-full h-14 top-0 left-0'>
 	<ThemeToggle />
 </nav>
 
