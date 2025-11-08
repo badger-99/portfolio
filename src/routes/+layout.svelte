@@ -8,6 +8,8 @@
 </script>
 
 <svelte:head>
+	<title>Alfred M</title>
+  <meta name="description" content="Software Engineer & Developer." />
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
