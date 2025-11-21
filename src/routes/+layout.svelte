@@ -14,17 +14,17 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<nav class='flex flex-row pt-2 px-4 fixed w-full h-14 top-0 left-0 justify-between items-center'>
+<nav class='flex flex-row pt-2 px-4 fixed w-full h-14 top-0 left-0 items-center'>
 	<div><a href="#hero">
 		<img alt="header logo" src={logo} width="64"/>
 	</a></div>
-	<div class="flex flex-row gap-2">
+	<div class="flex flex-row gap-2 mx-auto ">
 		<a href="#hero" class="hover:underline">Home</a>
 		<a href="#about" class="hover:underline">About</a>
 		<a href="#projects" class="hover:underline">Projects</a>
 		<a href="#contact" class="hover:underline">Contact</a>
 	</div>
-	<ThemeToggle />
+	<!-- <ThemeToggle /> -->
 </nav>
 
 <ModeWatcher defaultMode='system' />
