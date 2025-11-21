@@ -2,13 +2,13 @@
 	import '../app.css';
 	import {ModeWatcher} from 'mode-watcher'
 	import {ThemeToggle} from '$lib/components'
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.ico';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<title>Alfred M</title>
+	<title>Alfred M.</title>
   <meta name="description" content="Software Engineer & Developer." />
 	<link rel="icon" href={favicon} />
 </svelte:head>
