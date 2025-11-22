@@ -16,6 +16,7 @@
 	"devDependencies": {
 		"@eslint/compat": "^1.4.0",
 		"@eslint/js": "^9.38.0",
+		"@internationalized/date": "^3.10.0",
 		"@lucide/svelte": "^0.554.0",
 		"@sveltejs/adapter-auto": "^7.0.0",
 		"@sveltejs/kit": "^2.47.1",
@@ -23,6 +24,7 @@
 		"@tailwindcss/typography": "^0.5.19",
 		"@tailwindcss/vite": "^4.1.17",
 		"@types/node": "^24",
+		"bits-ui": "^2.14.4",
 		"clsx": "^2.1.1",
 		"eslint": "^9.38.0",
 		"eslint-config-prettier": "^10.1.8",
@@ -43,6 +45,7 @@
 	},
 	"dependencies": {
 		"lucide-svelte": "^0.553.0",
-		"mode-watcher": "^1.1.0"
+		"mode-watcher": "^1.1.0",
+		"svelte-awesome": "^3.3.5"
 	}
 }
