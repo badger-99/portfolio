@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid;
+    /* border: 1px solid; */
     scroll-snap-align: start;
     scroll-margin-top: calc(var(--spacing) * 14) /* 3.5rem = 56px */;
   }
