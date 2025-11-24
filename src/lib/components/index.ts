@@ -2,3 +2,4 @@
 export { default as ThemeToggle } from './theme-toggle.svelte'
 export { default as NavBar } from './nav-bar.svelte'
 export { default as ResponsiveContainer } from './responsive-container.svelte'
+export { default as Home } from './home.svelte'
