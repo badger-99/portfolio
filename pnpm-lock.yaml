@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@riadh-adrani/utils':
+        specifier: ^1.0.0
+        version: 1.0.0
       lucide-svelte:
         specifier: ^0.553.0
         version: 0.553.0(svelte@5.43.4)
@@ -371,6 +374,38 @@ packages:
 
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
+
+  '@riadh-adrani/array-utils@1.0.3':
+    resolution: {integrity: sha512-Q2kbkeYQjRGt4z6VdI0anxqG5g6LqvH/6+9v+UNSZzNC/1ZncnUrHJI2ecfTtVAhuh6Y/NRJF0lPRfpVdjSMVg==}
+    engines: {node: '>=16.0.0'}
+
+  '@riadh-adrani/async-utils@1.0.2':
+    resolution: {integrity: sha512-HphQxPIkusvDpOzo6I75dEuFdWszWaAOcmG1bGI2WRiFG/nDPk393aaLRVlKgVDP6vqmk0GHbsmkuzR9qWJYbQ==}
+    engines: {node: '>=16.0.0'}
+
+  '@riadh-adrani/color-utils@1.0.2':
+    resolution: {integrity: sha512-PrwEKq+yGNKNEo4pVWW/DrZMOrK1ez3yt3qG3Kw1RKdVAWvW/5c+ftC2DhTN8Nx8j8K8JQEmtWOs/OR4THPVGg==}
+    engines: {node: '>=16.0.0'}
+
+  '@riadh-adrani/math-utils@1.0.2':
+    resolution: {integrity: sha512-DUUEVzCGV9pX3L6IX+owDI0Y75zx9c6rRnincu+CjWh77J9DPuS6Ags3iaLDxnHy8/BkFHkhq6fATuHGbFlkuw==}
+    engines: {node: '>=16.0.0'}
+
+  '@riadh-adrani/obj-utils@1.0.6':
+    resolution: {integrity: sha512-xbacE8SpU6+q4uY/8aNnL96jsCmASEoqKsC9wU0V1UyjcZyoP/694CQz2+4AYCD4mQ9BAPNoUZcuDcHbM8MGZA==}
+    engines: {node: '>=16.0.0'}
+
+  '@riadh-adrani/str-utils@1.0.3':
+    resolution: {integrity: sha512-vZpcyCkkk7oUz1HSKRz/a/SZXUZLogomKHKpJd7wwHRodFH6y3aD9tD/ujcXYxbz3MmdmnqIMqVsWTUm326Y9A==}
+    engines: {node: '>=16.0.0'}
+
+  '@riadh-adrani/type-utils@1.1.0':
+    resolution: {integrity: sha512-+vp19TGlMF4V0F7v9dNt6xT1yIFPBdQ7YCHqg4RR8xbO35sQPpsjet0zSggXSAOF2trj8AFhlgvQuIj4F2wNOw==}
+    engines: {node: '>=16.0.0'}
+
+  '@riadh-adrani/utils@1.0.0':
+    resolution: {integrity: sha512-qtHeJF0UgMs1CDavrnzj6b0KOL+bDx4Nkl58rjDG5aki5RFlh0b1m8rD8YKpST99tJ+Eqi53nFZix2RsQDVmTw==}
+    engines: {node: '>=16.0.0'}
 
   '@rollup/rollup-android-arm-eabi@4.52.5':
     resolution: {integrity: sha512-8c1vW4ocv3UOMp9K+gToY5zL2XiiVw3k7f1ksf4yO1FlDFQ1C2u72iACFnSOceJFsWskc2WZNqeRhFRPzv+wtQ==}
@@ -1759,6 +1794,30 @@ snapshots:
       fastq: 1.19.1
 
   '@polka/url@1.0.0-next.29': {}
+
+  '@riadh-adrani/array-utils@1.0.3': {}
+
+  '@riadh-adrani/async-utils@1.0.2': {}
+
+  '@riadh-adrani/color-utils@1.0.2': {}
+
+  '@riadh-adrani/math-utils@1.0.2': {}
+
+  '@riadh-adrani/obj-utils@1.0.6': {}
+
+  '@riadh-adrani/str-utils@1.0.3': {}
+
+  '@riadh-adrani/type-utils@1.1.0': {}
+
+  '@riadh-adrani/utils@1.0.0':
+    dependencies:
+      '@riadh-adrani/array-utils': 1.0.3
+      '@riadh-adrani/async-utils': 1.0.2
+      '@riadh-adrani/color-utils': 1.0.2
+      '@riadh-adrani/math-utils': 1.0.2
+      '@riadh-adrani/obj-utils': 1.0.6
+      '@riadh-adrani/str-utils': 1.0.3
+      '@riadh-adrani/type-utils': 1.1.0
 
   '@rollup/rollup-android-arm-eabi@4.52.5':
     optional: true

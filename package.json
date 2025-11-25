@@ -44,6 +44,7 @@
 		"vite": "^7.1.10"
 	},
 	"dependencies": {
+		"@riadh-adrani/utils": "^1.0.0",
 		"lucide-svelte": "^0.553.0",
 		"mode-watcher": "^1.1.0",
 		"svelte-awesome": "^3.3.5"
