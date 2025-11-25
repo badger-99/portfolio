@@ -1,6 +1,9 @@
 <script>
-    import Home from '$lib/components/home.svelte';
+	import Home from '$lib/components/home.svelte';
+	import Title from '$lib/components/title.svelte';
 </script>
+
+<Title title={'Home'} />
 
 <main class="mt-14 flex h-fit flex-1 snap-y snap-mandatory flex-col px-2">
 	<section id="home">
