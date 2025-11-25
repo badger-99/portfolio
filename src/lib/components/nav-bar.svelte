@@ -11,6 +11,7 @@
 	</div>
 	<div class="mx-auto flex flex-row gap-2">
 		<a href="/" class="hover:underline">Home</a>
+		<a href="/experience" class="hover:underline">Experience</a>
 		<a href="#projects" class="hover:underline">Projects</a>
 		<a href="#contact" class="hover:underline">Contact</a>
 	</div>
