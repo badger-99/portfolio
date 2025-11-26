@@ -1,12 +1,3 @@
-<script>
-	import typescript from '$lib/assets/logos/typescript.svg';
-	import react from '$lib/assets/logos/react.svg';
-	import nextjs from '$lib/assets/logos/nextjs.svg';
-	import ruby from '$lib/assets/logos/ruby.svg';
-	import postgresql from '$lib/assets/logos/postgresql.svg';
-	import supabase from '$lib/assets/logos/supabase.svg';
-</script>
-
 <div id="cube-container">
 	<div id="cube-spinner">
 		<div class="faces" id="face1">
@@ -15,7 +6,7 @@
 		</div>
 
 		<div class="faces" id="face2">
-			<i class="devicon-react-original colored"></i>
+			<i class="devicon-tailwindcss-original colored"></i>
 			<!-- <img src={react} alt = ''/> -->
 		</div>
 
@@ -71,9 +62,9 @@
 		justify-content: center;
 		align-items: center;
 		box-shadow:
-    inset 0 0 50px 10px #031949,
-    0 0 60px 2px #f2f4ff,
-    0 0 60px 2px #3874f6;
+    /* inset 0 0 50px 10px #031949, */
+    0 0 10px 2px #f2f4ff,
+    0 0 10px 2px #3874f6;
 	}
 
 	/* Individual face transforms (translateZ = 60px on default) */
@@ -100,7 +91,7 @@
   /* shadow size afjusted by +/-80px (w- 200 -> 280, h- 125 -> 205) and bottom offset adjusted */
 	#cube-container #shadow {
 		/* shadow color */
-		background: #75a0ff;
+		background: #2d3a56;
 		position: absolute;
 		perspective: 20rem;
 		width: 200px;
