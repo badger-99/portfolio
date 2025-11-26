@@ -9,11 +9,13 @@
 	import BaseData from '$lib/data/base';
 	import avatar from '$lib/assets/my_picture.jpg';
 	import H2 from '$lib/components/typography/h2.svelte';
+	import Title from '$lib/components/title.svelte';
   
   const typingSvgMed =
     'https://readme-typing-svg.demolab.com?font=system-ui+Avenir+Helvetica+arial+sans-serif&weight=500&size=33&height=50&duration=4000&pause=1000&color=A1A1A1&center=false&random=false&width=395&lines=Front-end+Fixer;Back-end+Builder;Full+Stack+Developer';;
 </script>
 
+<Title title={'Home'} />
 <div>
   <ResponsiveContainer className="flex flex-col justify-center flex-1 gap-16 max-w-2xl">
 			<div

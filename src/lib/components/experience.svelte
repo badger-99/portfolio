@@ -5,7 +5,7 @@
 	import Icon from 'svelte-awesome';
 	import ExperienceData from '$lib/data/experience';
 	import dotCircleO from 'svelte-awesome/icons/dotCircleO';
-	import Title from './title.svelte';
+	import Title from '$lib/components/title.svelte';
 
 	let experiences = ExperienceData.items;
 </script>
