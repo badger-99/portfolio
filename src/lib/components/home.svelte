@@ -10,15 +10,17 @@
 	import avatar from '$lib/assets/my_picture.jpg';
 	import H2 from '$lib/components/typography/h2.svelte';
 	import Title from '$lib/components/title.svelte';
-  
-  const typingSvgMed =
-    'https://readme-typing-svg.demolab.com?font=system-ui+Avenir+Helvetica+arial+sans-serif&weight=500&size=33&height=50&duration=4000&pause=1000&color=A1A1A1&center=false&random=false&width=395&lines=Front-end+Fixer;Back-end+Builder;Full+Stack+Developer';;
+	import Cube from '$lib/components/cube.svelte';
+
+	const typingSvgMed =
+		'https://readme-typing-svg.demolab.com?font=system-ui+Avenir+Helvetica+arial+sans-serif&weight=500&size=33&height=50&duration=4000&pause=1000&color=A1A1A1&center=false&random=false&width=395&lines=Front-end+Fixer;Back-end+Builder;Full+Stack+Developer';
 </script>
 
 <Title title={'Home'} />
 
 <section class="section-default">
-  <ResponsiveContainer className="flex flex-col justify-center flex-1 gap-16 max-w-2xl">
+	<div class="flex flex-row justify-between w-5xl">
+		<ResponsiveContainer className="flex flex-col justify-center flex-1 gap-16 max-w-2xl">
 			<div
 				class="flex flex-1 flex-col items-center justify-center gap-8 px-14 md:flex-row md:justify-between"
 			>
@@ -53,11 +55,23 @@
 					</div>
 				</div>
 			</div>
-      <div class="flex flex-1 flex-col gap-4 px-14">
-        <H2>About Me</H2>
-        <div class="prose max-w-xl text-pretty font-sans text-md text-muted-foreground dark:prose-invert">{BaseData.about}</div>
+			<div class="flex flex-1 flex-col gap-4 px-14">
+				<H2>About Me</H2>
+				<div
+					class="prose text-md dark:prose-invert max-w-xl font-sans text-pretty text-muted-foreground"
+				>
+					{BaseData.about}
+				</div>
 
-        <div class="prose max-w-xl text-pretty font-sans text-md text-muted-foreground dark:prose-invert">Feel free to explore my projects, see where I've worked, or drop me a message.</div>
-      </div>
+				<div
+					class="prose text-md dark:prose-invert max-w-xl font-sans text-pretty text-muted-foreground"
+				>
+					Feel free to explore my projects, see where I've worked, or drop me a message.
+				</div>
+			</div>
 		</ResponsiveContainer>
+		<div class="relative">
+			<Cube />
+		</div>
+	</div>
 </section>
