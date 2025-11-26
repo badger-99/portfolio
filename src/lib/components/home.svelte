@@ -48,7 +48,7 @@
 						</div>
 					</div>
 					<div>
-						<Avatar.Root class="size-28 border">
+						<Avatar.Root class="size-34">
 							<Avatar.Image alt="avatar" src={avatar} />
 							<Avatar.Fallback>{BaseData.initials}</Avatar.Fallback>
 						</Avatar.Root>
