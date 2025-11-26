@@ -113,6 +113,13 @@ const items = [
 		category: 'markup-style'
 	}),
 	defineSkill({
+		slug: 'tailwindcss',
+		color: 'blue',
+		logo: Assets.TailwindCSS,
+		name: 'TailwindCSS',
+		category: 'markup-style'
+	}),
+	defineSkill({
 		slug: 'react',
 		color: 'cyan',
 		logo: Assets.React,
@@ -127,7 +134,7 @@ const items = [
 		category: 'ibrary'
 	}),
 	defineSkill({
-		slug: 'postgrtesql',
+		slug: 'postgresql',
 		color: 'royalblue',
 		logo: Assets.PostgreSQL,
 		name: 'React Js',
@@ -170,7 +177,7 @@ const items = [
 	}),
 	defineSkill({
 		slug: 'vercel',
-		color: 'silver',
+		color: 'white',
 		logo: Assets.Vercel,
 		name: 'Vercel',
 		category: 'devtools'
