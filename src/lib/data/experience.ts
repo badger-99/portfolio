@@ -12,13 +12,13 @@ const items: Array<Experience> = [
 		contract: ContractType.FullTime,
 		type: 'Software Development',
 		location: 'Remote',
-		period: { from: new Date('2024-03-01'), to: new Date("2025-09-30") },
+		period: { from: new Date('2024-03-01'), to: new Date('2025-09-30') },
 		skills: getSkills('nextjs', 'ts', 'tailwindcss', 'supabase', 'vercel'),
 		name: 'Lead (solo) Developer',
 		color: 'silver',
 		links: [],
 		logo: Assets.LightrayTechnologies,
-		shortDescription: 'Creating awesome applications for customers.'
+		shortDescription: 'Creating AI-Powered web applications.'
 	},
 	{
 		slug: 'microverse',
@@ -28,12 +28,23 @@ const items: Array<Experience> = [
 		type: 'Software Development',
 		location: 'Remote',
 		period: { from: new Date('2023-05-01'), to: new Date('2024-02-10') },
-		skills: getSkills('html', 'css', 'sass' , 'js', 'react', 'redux', 'jest', 'postgresql', 'ruby', 'rails'),
+		skills: getSkills(
+			'html',
+			'css',
+			'sass',
+			'js',
+			'react',
+			'redux',
+			'jest',
+			'postgresql',
+			'ruby',
+			'rails'
+		),
 		name: 'Full-stack Developer',
 		color: 'purple',
 		links: [],
 		logo: Assets.Microverse,
-		shortDescription: 'Creating awesome tools for developers.'
+		shortDescription: 'Hands-on learning at a remote software development academy.'
 	}
 ];
 
