@@ -6,18 +6,6 @@
 	<section id="home">
 		<Home />
 	</section>
-
-	<section id="projects">
-		<div>
-			<h1>Projects</h1>
-		</div>
-	</section>
-
-	<section id="contact">
-		<div>
-			<h1>Contact Me</h1>
-		</div>
-	</section>
 </main>
 
 <style>
