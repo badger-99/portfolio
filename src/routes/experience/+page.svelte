@@ -2,6 +2,6 @@
 	import Experience from '$lib/components/experience.svelte';
 </script>
 
-<section id="experience">
+<section>
 	<Experience />
 </section>

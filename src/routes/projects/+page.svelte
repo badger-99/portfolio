@@ -1,7 +1,7 @@
 <script>
-	import Projects from "$lib/components/projects.svelte";
-
+	import Projects from '$lib/components/projects.svelte';
 </script>
-<section id="projects">
-		<Projects />
-	</section>
+
+<section>
+	<Projects />
+</section>

@@ -2,6 +2,6 @@
 	import ContactMe from '$lib/components/contact.svelte';
 </script>
 
-<section id="contact">
+<section>
 	<ContactMe />
 </section>

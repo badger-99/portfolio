@@ -16,7 +16,8 @@
 </script>
 
 <Title title={'Home'} />
-<div>
+
+<section class="section-default">
   <ResponsiveContainer className="flex flex-col justify-center flex-1 gap-16 max-w-2xl">
 			<div
 				class="flex flex-1 flex-col items-center justify-center gap-8 px-14 md:flex-row md:justify-between"
@@ -59,4 +60,4 @@
         <div class="prose max-w-xl text-pretty font-sans text-md text-muted-foreground dark:prose-invert">Feel free to explore my projects, see where I've worked, or drop me a message.</div>
       </div>
 		</ResponsiveContainer>
-</div>
+</section>

@@ -131,3 +131,12 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.section-default {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    /* scroll-margin-top: calc(var(--spacing) * 14); */
+}
