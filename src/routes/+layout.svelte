@@ -11,6 +11,7 @@
 <svelte:head>
 	<title>Alfred M.</title>
 	<meta name="description" content="Software Engineer & Developer." />
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 	<link rel="icon" href={favicon} />
 </svelte:head>
 

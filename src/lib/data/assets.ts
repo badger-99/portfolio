@@ -25,6 +25,7 @@ const Assets = {
 	Redux: asset('redux.svg'),
 	Ruby: asset('ruby.svg'),
 	Sass: asset('sass.svg'),
+	StressTest: asset('stresstest.png'),
 	Supabase: asset('supabase.svg'),
 	Svelte: asset('svelte.svg'),
 	TailwindCSS: asset('tailwindcss.svg'),
