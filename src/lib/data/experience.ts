@@ -31,14 +31,16 @@ const items: Array<Experience> = [
 		skills: getSkills(
 			'html',
 			'css',
-			'sass',
 			'js',
 			'react',
 			'redux',
 			'jest',
 			'postgresql',
 			'ruby',
-			'rails'
+			'rails',
+			'rspec',
+			'swagger',
+			'sass',
 		),
 		name: 'Full-stack Developer',
 		color: 'purple',

@@ -78,18 +78,11 @@ const title = 'Skills';
 
 const items = [
 	defineSkill({
-		slug: 'js',
-		color: 'yellow',
-		logo: Assets.JavaScript,
-		name: 'Javascript',
-		category: 'pro-lang'
-	}),
-	defineSkill({
-		slug: 'ts',
-		color: 'blue',
-		logo: Assets.TypeScript,
-		name: 'Typescript',
-		category: 'pro-lang'
+		slug: 'html',
+		color: 'orange',
+		logo: Assets.HTML,
+		name: 'HTML',
+		category: 'markup-style'
 	}),
 	defineSkill({
 		slug: 'css',
@@ -99,25 +92,11 @@ const items = [
 		category: 'markup-style'
 	}),
 	defineSkill({
-		slug: 'html',
-		color: 'orange',
-		logo: Assets.HTML,
-		name: 'HTML',
-		category: 'markup-style'
-	}),
-	defineSkill({
-		slug: 'sass',
-		color: 'pink',
-		logo: Assets.Sass,
-		name: 'Sass',
-		category: 'markup-style'
-	}),
-	defineSkill({
-		slug: 'tailwindcss',
-		color: 'blue',
-		logo: Assets.TailwindCSS,
-		name: 'TailwindCSS',
-		category: 'markup-style'
+		slug: 'js',
+		color: 'yellow',
+		logo: Assets.JavaScript,
+		name: 'Javascript',
+		category: 'pro-lang'
 	}),
 	defineSkill({
 		slug: 'react',
@@ -132,6 +111,13 @@ const items = [
 		logo: Assets.Redux,
 		name: 'Redux Js',
 		category: 'ibrary'
+	}),
+	defineSkill({
+		slug: 'jest',
+		color: 'mediumpurple',
+		logo: Assets.Jest,
+		name: 'Jest',
+		category: 'test'
 	}),
 	defineSkill({
 		slug: 'postgresql',
@@ -155,11 +141,39 @@ const items = [
 		category: 'framework'
 	}),
 	defineSkill({
-		slug: 'jest',
-		color: 'mediumpurple',
-		logo: Assets.Jest,
-		name: 'Jest',
+		slug: 'rspec',
+		color: 'cyan',
+		logo: Assets.RSpec,
+		name: 'RSpec',
 		category: 'test'
+	}),
+	defineSkill({
+		slug: 'swagger',
+		color: 'lime',
+		logo: Assets.Swagger,
+		name: 'Swagger',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'sass',
+		color: 'pink',
+		logo: Assets.Sass,
+		name: 'Sass',
+		category: 'markup-style'
+	}),
+	defineSkill({
+		slug: 'ts',
+		color: 'blue',
+		logo: Assets.TypeScript,
+		name: 'Typescript',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'tailwindcss',
+		color: 'blue',
+		logo: Assets.TailwindCSS,
+		name: 'TailwindCSS',
+		category: 'markup-style'
 	}),
 	defineSkill({
 		slug: 'nextjs',
