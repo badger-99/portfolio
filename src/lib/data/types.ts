@@ -1,3 +1,4 @@
+import type { IconData } from 'svelte-awesome/components/Icon.svelte';
 import type { Color } from './colors';
 
 export type Icon = `i-carbon-${string}`;
@@ -41,10 +42,7 @@ export interface Link {
 	to: string;
 	label: string;
 	newTab?: boolean;
-}
-
-export interface IconLink extends Link {
-	icon: Asset;
+	icon: Record<string, IconData>;
 }
 
 export interface SkillCategory<S extends string = string> {
@@ -68,7 +66,7 @@ export interface Experience<S extends string = string> extends Project<S> {
 	company: string;
 	location: string;
 	contract: ContractType;
-	period?: {
+	period: {
 		from: Date;
 		to?: Date;
 	};

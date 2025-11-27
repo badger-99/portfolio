@@ -1,6 +1,6 @@
 import logo from '$lib/assets/w-LogoHeader1.png';
 import user from 'svelte-awesome/icons/user';
-import cubes from 'svelte-awesome/icons/cubes';
+import cube from 'svelte-awesome/icons/cube';
 import industry from 'svelte-awesome/icons/industry';
 import envelopeO from 'svelte-awesome/icons/envelopeO';
 import type { IconData } from 'svelte-awesome/components/Icon.svelte';
@@ -14,7 +14,7 @@ const items: Array<{
 	href: string;
 }> = [
 	{ title: 'Home', icon: user, href: '/' },
-	{ title: 'Projects', icon: cubes, href: '/projects' },
+	{ title: 'Projects', icon: cube, href: '/projects' },
 	{ title: 'Experience', icon: industry, href: '/experience' },
 	{ title: 'Contact Me', icon: envelopeO, href: '/contact' }
 ];
