@@ -1,6 +1,7 @@
 <script lang="ts">
 	import * as Form from '$lib/components/ui/form/index.js';
 	import { Input } from '$lib/components/ui/input/index.js';
+	import { Textarea } from "$lib/components/ui/textarea/index.js";
 	import { formSchema, type FormSchema } from './schema';
 	import { type SuperValidated, type Infer, superForm } from 'sveltekit-superforms';
 	import { zod4Client } from 'sveltekit-superforms/adapters';
@@ -14,39 +15,35 @@
 	const { form: formData, enhance } = form;
 </script>
 
-<form method="POST" use:enhance>
+<div class="flex p-10">
+<form method="POST" use:enhance class=" flex flex-col gap-4 w-md mx-auto">
 	<Form.Field {form} name="name">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Name</Form.Label>
-				<Input {...props} bind:value={$formData.name} />
+				<Input placeholder="Name" {...props} bind:value={$formData.name} />
 			{/snippet}
 		</Form.Control>
-		<Form.Description>This is your public display name.</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
 
 	<Form.Field {form} name="email">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Email</Form.Label>
-				<Input {...props} bind:value={$formData.email} />
+				<Input placeholder="Email" {...props} bind:value={$formData.email} />
 			{/snippet}
 		</Form.Control>
-		<Form.Description>This is your public display name.</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
 
 	<Form.Field {form} name="message">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Message</Form.Label>
-				<Input {...props} bind:value={$formData.message} />
+				<Textarea class='h-80' placeholder="Type your message here." {...props} bind:value={$formData.message} />
 			{/snippet}
 		</Form.Control>
-		<Form.Description>This is your public display name.</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
 
-	<Form.Button>Submit</Form.Button>
+	<Form.Button class='w-fit mx-auto'>Submit</Form.Button>
 </form>
+</div>
