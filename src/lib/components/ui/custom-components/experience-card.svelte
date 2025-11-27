@@ -4,11 +4,11 @@
 	import { computeExactDuration, getMonthAndYear } from '$lib/utils';
 	import { ellipsify } from '@riadh-adrani/utils';
 	import { mode } from 'mode-watcher';
-	import SkillBadge from '$lib/components/ui/badge/skill-badge.svelte';
+	import SkillBadge from '$lib/components/ui/custom-components/skill-badge.svelte';
 	import * as Avatar from '$lib/components/ui/avatar/index.js';
 	import { Badge } from '$lib/components/ui/badge';
 	import { CardContent, CardTitle } from '$lib/components/ui/card';
-	import FancyCard from '$lib/components/ui/custom-cards/fancy-card.svelte';
+	import FancyCard from '$lib/components/ui/custom-components/fancy-card.svelte';
 	import Icon from 'svelte-awesome';
 	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
 	import Muted from '$lib/components/typography/muted.svelte';
@@ -35,12 +35,12 @@
 </script>
 
 <FancyCard color={experience.color}>
-	<CardContent class="p-6 flex flex-col gap-8 sm:flex-row">
-		<Avatar.Root class='size-10'>
+	<CardContent class="flex flex-col gap-8 p-6 sm:flex-row">
+		<Avatar.Root class="size-10">
 			<Avatar.Fallback>
 				<img src={Assets.Unknown} alt={experience.name} />
 			</Avatar.Fallback>
-			<Avatar.Image class='aspect-square h-full w-full block' src={experience.logo} />
+			<Avatar.Image class="block aspect-square h-full w-full" src={experience.logo} />
 		</Avatar.Root>
 		<div class="flex flex-col gap-4">
 			<CardTitle>{experience.name}</CardTitle>
@@ -50,7 +50,7 @@
 						<Tooltip.Root>
 							<Tooltip.Trigger>
 								<Badge variant="secondary" class="flex flex-row items-center gap-1">
-									<Icon class='shrink-0' data={badge.icon} />
+									<Icon class="shrink-0" data={badge.icon} />
 									<!-- <i class={`shrink-0 ${badge.icon}`}></i> -->
 									{badge.label}
 								</Badge>
@@ -64,7 +64,7 @@
 				<Tooltip.Root>
 					<Tooltip.Trigger>
 						<Muted className="flex flex-row items-center gap-2">
-							<Icon class='shrink-0' data={calendarO} />
+							<Icon class="shrink-0" data={calendarO} />
 							<div>{period}</div>
 						</Muted>
 					</Tooltip.Trigger>
@@ -75,7 +75,7 @@
 				<Tooltip.Root>
 					<Tooltip.Trigger>
 						<Muted className="flex flex-row items-center gap-2">
-							<Icon class='shrink-0' data={clockO} />
+							<Icon class="shrink-0" data={clockO} />
 							<div>{exactDuration}</div>
 						</Muted>
 						<Tooltip.Content side="bottom">Exact duration</Tooltip.Content>

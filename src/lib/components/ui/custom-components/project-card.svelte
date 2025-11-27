@@ -2,27 +2,23 @@
 	import Assets from '$lib/data/assets';
 	import type { Project } from '$lib/data/types';
 	import { ellipsify } from '@riadh-adrani/utils';
-	import ButtonLink from '$lib/components/ui/button-link.svelte'
-	import SkillBadge from '$lib/components/ui/badge/skill-badge.svelte';
+	import ButtonLink from '$lib/components/ui/custom-components/button-link.svelte';
+	import SkillBadge from '$lib/components/ui/custom-components/skill-badge.svelte';
 	import * as Avatar from '$lib/components/ui/avatar/index.js';
-  import { CardContent, CardHeader, CardTitle } from '$lib/components/ui/card';
-	import FancyCard from '$lib/components/ui/custom-cards/fancy-card.svelte';
+	import { CardContent, CardHeader, CardTitle } from '$lib/components/ui/card';
+	import FancyCard from '$lib/components/ui/custom-components/fancy-card.svelte';
 	import Icon from 'svelte-awesome';
-  import cubes from 'svelte-awesome/icons/cubes';
-  import { Separator } from "$lib/components/ui/separator/index.js";
+	import cubes from 'svelte-awesome/icons/cubes';
+	import { Separator } from '$lib/components/ui/separator/index.js';
 	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
 	import Muted from '$lib/components/typography/muted.svelte';
 
 	const { project }: { project: Project } = $props();
 </script>
 
-<FancyCard
-	color={project.color}
-	class="flex h-full flex-col"
-	href={`/projects/${project.slug}`}
->
-	<CardHeader class="flex w-full flex-col gap-4 p-6 pb-0 space-y-1.5">
-		<Avatar.Root class='size-10'>
+<FancyCard color={project.color} class="flex h-full flex-col" href={`/projects/${project.slug}`}>
+	<CardHeader class="flex w-full flex-col gap-4 space-y-1.5 p-6 pb-0">
+		<Avatar.Root class="size-10">
 			<Avatar.Fallback>
 				<img src={Assets.Unknown} alt={project.name} />
 			</Avatar.Fallback>
@@ -31,19 +27,19 @@
 		<div class="flex w-full flex-row items-center gap-1 overflow-x-hidden">
 			<CardTitle class="h-auto min-w-0 flex-1 overflow-x-hidden">
 				<Tooltip.Provider>
-          <Tooltip.Root>
-					<Tooltip.Trigger
-						class="w-full overflow-y-auto overflow-x-hidden truncate text-ellipsis text-nowrap text-left"
-					>
-						{project.name}
-					</Tooltip.Trigger>
-					<Tooltip.Content>{project.name}</Tooltip.Content>
-        </Tooltip.Root>
+					<Tooltip.Root>
+						<Tooltip.Trigger
+							class="w-full truncate overflow-x-hidden overflow-y-auto text-left text-nowrap text-ellipsis"
+						>
+							{project.name}
+						</Tooltip.Trigger>
+						<Tooltip.Content>{project.name}</Tooltip.Content>
+					</Tooltip.Root>
 				</Tooltip.Provider>
 			</CardTitle>
-				{#each project.links as link (link.to)}
-					<ButtonLink {link} />
-				{/each}
+			{#each project.links as link (link.to)}
+				<ButtonLink {link} />
+			{/each}
 		</div>
 		<Separator />
 	</CardHeader>
@@ -56,7 +52,7 @@
 			>{ellipsify(project.shortDescription, 100)}</Muted
 		>
 		<Separator />
-		<Muted>Stack:</Muted> 
+		<Muted>Stack:</Muted>
 		<div class="flex flex-row flex-wrap items-center gap-2">
 			{#each project.skills as skill (skill.slug)}
 				<SkillBadge {skill} />

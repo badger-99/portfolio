@@ -1,9 +1,9 @@
 <script lang="ts">
-	import ExperienceCard from '$lib/components/ui/custom-cards/experience-card.svelte';
+	import ExperienceCard from '$lib/components/ui/custom-components/experience-card.svelte';
 	import Icon from 'svelte-awesome';
 	import ExperienceData from '$lib/data/experience';
 	import dotCircleO from 'svelte-awesome/icons/dotCircleO';
-	import TitledPage from '$lib/components/titled-page.svelte';
+	import TitledPage from '$lib/components/ui/custom-components/titled-page.svelte';
 
 	let experiences = ExperienceData.items;
 </script>

@@ -1,8 +1,8 @@
 <script lang="ts">
 	import BaseData from '$lib/data/base';
-	import ResponsiveContainer from '$lib/components/responsive-container.svelte';
+	import ResponsiveContainer from '$lib/components/ui/custom-components/responsive-container.svelte';
 	import H1 from '$lib/components/typography/h1.svelte';
-	import Title from '$lib/components/title.svelte';
+	import Title from '$lib/components/ui/custom-components/title.svelte';
 
 	export let title = 'Title';
 </script>
