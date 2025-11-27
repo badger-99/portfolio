@@ -4,6 +4,7 @@
 	import { ModeWatcher } from 'mode-watcher';
 	import favicon from '$lib/assets/favicon.ico';
 	import NavBar from '$lib/components/nav-bar.svelte';
+	import { Toaster } from '$lib/components/ui/sonner';
 
 	let { children } = $props();
 </script>
@@ -18,5 +19,5 @@
 <ModeWatcher defaultMode="dark" />
 <NavBar />
 
-
+<Toaster richColors duration={10000} closeButton/>
 {@render children()}

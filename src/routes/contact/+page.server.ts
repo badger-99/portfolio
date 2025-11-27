@@ -19,5 +19,7 @@ export const actions: Actions = {
 			});
 		}
 		console.log(form)
+
+		return {form}
 	}
 };

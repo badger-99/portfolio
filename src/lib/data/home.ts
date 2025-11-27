@@ -1,6 +1,6 @@
 import BaseData from './base';
 import type { IconType } from 'svelte-awesome/components/Icon.svelte';
-import at from 'svelte-awesome/icons/at';
+// import at from 'svelte-awesome/icons/at';
 import github from 'svelte-awesome/icons/github';
 import linkedinSquare from 'svelte-awesome/icons/linkedinSquare';
 
@@ -17,7 +17,7 @@ const hero: {
 	links: [
 		{ label: 'GitHub', href: 'https://github.com/badger-99', icon: github },
 		{ label: 'LinkedIn', href: 'https://linkedin.com/in/alfredmkg', icon: linkedinSquare },
-		{ label: 'Email', href: 'mailto:alpeter91@gmail.com', icon: at }
+		// { label: 'Email', href: 'mailto:contact@alfredm.me.com', icon: at }
 	]
 };
 

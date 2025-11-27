@@ -7,7 +7,7 @@
 </script>
 
 <TitledPage title={'Contact Me'}>
-	<div class='mx-auto'>
+	<div class='mx-auto text-center px-4'>
 		<Lead>Have feedback or a project in mind? I'd love to hear from you — send me a message and let's chat!</Lead>
 		<ContactForm {data} />
 	</div>
