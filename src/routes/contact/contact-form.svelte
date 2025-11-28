@@ -6,7 +6,6 @@
 	import { type SuperValidated, type Infer, superForm } from 'sveltekit-superforms';
 	import { zod4Client } from 'sveltekit-superforms/adapters';
 	import { toast } from 'svelte-sonner';
-	import { inflate } from 'zlib';
 
 	let { data }: { data: { form: SuperValidated<Infer<FormSchema>> } } = $props();
 
