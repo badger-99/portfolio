@@ -9,11 +9,10 @@
 
 <Title {title} />
 
-<div class="mt-[50px] flex flex-1 flex-col">
 	<ResponsiveContainer className="flex flex-col flex-1 pb-8">
 		<H1 className="text-center py-16">{title}</H1>
 		<div class="flex flex-1 flex-col gap-5 px-4">
 			<slot />
 		</div>
 	</ResponsiveContainer>
-</div>
+

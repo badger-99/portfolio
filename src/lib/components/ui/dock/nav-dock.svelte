@@ -6,10 +6,11 @@
   import DockIcon from "./dock-icon.svelte";
 </script>
 
-  <div>
+<div class="pointer-events-none fixed inset-x-0 bottom-0 z-30 mx-auto flex h-full max-h-14 origin-bottom bg-linear-to-t from-black from-15% to-transparent">
+  <div class="fixed inset-x-0 bottom-3 h-16 w-full ">
     <Dock
       direction="middle"
-      class="relative max-md:w-70 justify-between"
+      class="pointer-events-auto relative z-50 mx-auto flex h-full min-h-full transform-gpu items-center gap-2.5 rounded-full bg-background/15 backdrop-blur-md px-1 sm:gap-3 md:gap-4"
       let:mouseX
       let:distance
       let:magnification
@@ -35,4 +36,4 @@
       {/each}
     </Dock>
   </div>
-
+</div>
