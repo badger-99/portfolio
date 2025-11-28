@@ -5,6 +5,7 @@ export { default as ResponsiveContainer } from './ui/custom-components/responsiv
 export { default as Home } from './home.svelte'
 export { default as Experience } from './experience.svelte'
 export { default as Projects } from './projects.svelte'
+export { default as Skills } from './skills.svelte'
 export { default as ContactMe } from '../../routes/contact/contact.svelte'
 export { default as Title } from './ui/custom-components/title.svelte'
 export { default as TitledPage } from './ui/custom-components/titled-page.svelte'
