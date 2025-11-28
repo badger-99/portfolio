@@ -9,27 +9,37 @@
 	import BaseData from '$lib/data/base';
 	import avatar from '$lib/assets/my_picture.jpg';
 	import H2 from '$lib/components/typography/h2.svelte';
+	import TitledPage from '$lib/components/ui/custom-components/titled-page.svelte';
 	import Title from '$lib/components/ui/custom-components/title.svelte';
 	import Cube from '$lib/components/ui/custom-components/cube.svelte';
 
 	const typingSvgMed =
+		'https://readme-typing-svg.demolab.com?font=system-ui+Avenir+Helvetica+arial+sans-serif&weight=500&size=33&height=50&duration=4000&pause=1000&color=A1A1A1&center=true&random=false&width=395&lines=Front-end+Fixer;Back-end+Builder;Full+Stack+Developer';
+	const typingSvgMed2 =
 		'https://readme-typing-svg.demolab.com?font=system-ui+Avenir+Helvetica+arial+sans-serif&weight=500&size=33&height=50&duration=4000&pause=1000&color=A1A1A1&center=false&random=false&width=395&lines=Front-end+Fixer;Back-end+Builder;Full+Stack+Developer';
 </script>
 
 <Title title={'Home'} />
 
-<section class="section-default">
-	<div class="flex flex-row justify-between w-5xl">
-		<ResponsiveContainer className="flex flex-col justify-center flex-1 gap-16 max-w-2xl">
+<section class="flex items-center justify-center mb-25 lg:mt-16">
+	<div class="flex flex-row justify-between lg:min-w-4xl">
+		<ResponsiveContainer className="flex flex-col justify-center gap-16 max-w-2xl lg:flex-1 lg:w-full">
 			<div
-				class="flex flex-1 flex-col items-center justify-center gap-8 px-14 md:flex-row md:justify-between"
+				class="flex flex-1 flex-col items-center justify-center gap-8 px-14 lg:flex-row lg:justify-between"
 			>
-				<div class="flex justify-between gap-4">
+				<div class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-4">
 					<div
-						class="flex flex-col items-center justify-center gap-4 text-center md:items-start md:text-left"
+						class="flex flex-col items-center justify-center gap-4 text-center lg:items-start lg:text-left"
 					>
 						<H1>{HomeData.hero.title}</H1>
-						<img src={typingSvgMed} alt="typing animation" />
+						<div class="block lg:hidden">
+							<Avatar.Root class="size-24">
+								<Avatar.Image alt="avatar" src={avatar} />
+								<Avatar.Fallback>{BaseData.initials}</Avatar.Fallback>
+							</Avatar.Root>
+						</div>
+						<img src={typingSvgMed} alt="typing animation" class="mx-auto block lg:hidden" />
+						<img src={typingSvgMed2} alt="typing animation" class="mx-auto hidden lg:block" />
 						<div class="flex flex-row gap-1">
 							{#each HomeData.hero.links as item}
 								<a href={item.href} target="_blank">
@@ -47,15 +57,15 @@
 							{/each}
 						</div>
 					</div>
-					<div>
-						<Avatar.Root class="size-34">
+					<div class="hidden lg:block">
+						<Avatar.Root class="size-24">
 							<Avatar.Image alt="avatar" src={avatar} />
 							<Avatar.Fallback>{BaseData.initials}</Avatar.Fallback>
 						</Avatar.Root>
 					</div>
 				</div>
 			</div>
-			<div class="flex flex-1 flex-col gap-4 px-14">
+			<div class="flex flex-1 flex-col gap-4 px-14 text-center lg:text-start">
 				<H2>About Me</H2>
 				<div
 					class="prose text-md dark:prose-invert max-w-xl font-sans text-pretty text-muted-foreground"
@@ -70,7 +80,7 @@
 				</div>
 			</div>
 		</ResponsiveContainer>
-		<div class="relative">
+		<div class="relative hidden lg:block">
 			<Cube />
 		</div>
 	</div>
