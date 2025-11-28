@@ -48,9 +48,11 @@
 	},
 	"dependencies": {
 		"@riadh-adrani/utils": "^1.0.0",
+		"class-variance-authority": "^0.7.1",
 		"lucide-svelte": "^0.553.0",
 		"mode-watcher": "^1.1.0",
 		"svelte-awesome": "^3.3.5",
+		"svelte-motion": "^0.12.2",
 		"zod": "^4.1.13"
 	}
 }

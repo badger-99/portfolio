@@ -5,6 +5,7 @@
 	import favicon from '$lib/assets/favicon.ico';
 	import NavBar from '$lib/components/nav-bar.svelte';
 	import { Toaster } from '$lib/components/ui/sonner';
+	import DockNavBar from '$lib/components/ui/dock/nav-dock.svelte';
 
 	let { children } = $props();
 </script>
@@ -17,7 +18,8 @@
 </svelte:head>
 
 <ModeWatcher defaultMode="dark" />
-<NavBar />
+<!-- <NavBar /> -->
+<DockNavBar />
 
 <Toaster richColors duration={10000} closeButton/>
 {@render children()}

@@ -1,6 +1,7 @@
 // place files you want to import through the `$lib` alias in this folder.
 export { default as ThemeToggle } from './ui/custom-components/theme-toggle.svelte'
 export { default as NavBar } from './nav-bar.svelte'
+export { default as DockNavBar } from './ui/dock/nav-dock.svelte'
 export { default as ResponsiveContainer } from './ui/custom-components/responsive-container.svelte'
 export { default as Home } from './home.svelte'
 export { default as Experience } from './experience.svelte'
