@@ -110,7 +110,7 @@ const items = [
 		color: 'violet',
 		logo: Assets.Redux,
 		name: 'Redux Js',
-		category: 'ibrary'
+		category: 'library'
 	}),
 	defineSkill({
 		slug: 'jest',
@@ -123,7 +123,7 @@ const items = [
 		slug: 'postgresql',
 		color: 'royalblue',
 		logo: Assets.PostgreSQL,
-		name: 'React Js',
+		name: 'PostgreSQL',
 		category: 'db'
 	}),
 	defineSkill({
