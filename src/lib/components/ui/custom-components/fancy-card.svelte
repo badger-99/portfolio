@@ -78,9 +78,9 @@
 
 	$effect(() => {
 		// as defined by shadcn
-		el.style.setProperty('--card-color', 'hsl(var(--card) / 1)');
-		el.style.setProperty('--card-color-60', 'hsl(var(--card) / 0.6)');
-		el.style.setProperty('--card-color-30', 'hsl(var(--card) / 0.3)');
+		el.style.setProperty('--card-color', 'oklch(var(--fancy-skill-card) / 1)');
+		el.style.setProperty('--card-color-60', 'oklch(var(--fancy-skill-card) / 0.6)');
+		el.style.setProperty('--card-color-30', 'oklch(var(--fancy-skill-card) / 0.3)');
 	});
 </script>
 
