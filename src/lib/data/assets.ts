@@ -1,4 +1,7 @@
-const url = (file: string) => `/src/lib/assets/logos/${file}`;
+import { resolve } from '$app/paths';
+
+const base = resolve('/')
+const url = (file: string) => `${base}logos/${file}`;
 
 const asset = (filename: string) => {
 	return url(filename);
@@ -33,7 +36,7 @@ const Assets = {
 	TailwindCSS: asset('tailwindcss.svg'),
 	TypeScript: asset('typescript.svg'),
 	Unknown: asset('no-img.svg'),
-	Vercel: asset('vercel.svg')
+	Vercel: asset('vercel-white.svg')
 };
 
 export default Assets;
