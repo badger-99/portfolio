@@ -61,7 +61,7 @@
 	const { form: formData, enhance } = form;
 </script>
 
-<div class="flex p-10">
+<div class="flex pt-10">
 	<form method="POST" use:enhance class=" mx-auto flex w-md flex-col gap-4">
 		<Form.Field {form} name="name">
 			<Form.Control>
