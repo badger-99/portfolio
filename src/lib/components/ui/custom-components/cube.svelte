@@ -113,7 +113,7 @@
 			transform: rotateY(-90deg) rotateZ(90deg);
 		}
 		33% {
-			transform: rotateY(-90deg) rotateX(90deg);
+			transform: rotateY(-90deg) rotateX(0deg);
 		}
 		50% {
 			transform: rotateY(-180deg) rotateZ(90deg);
