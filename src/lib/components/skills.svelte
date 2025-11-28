@@ -10,7 +10,7 @@
 </script>
 
 <TitledPage title={SkillsData.title}>
-	<div class="mt-4 mb-32 flex flex-col gap-14">
+	<div class="flex flex-col gap-14">
 		{#each groups as group (group.category.slug)}
 			<div class="flex flex-col gap-6">
 				<div class="flex flex-row items-center gap-2">
