@@ -47,8 +47,6 @@
     class={dockClass}
   >
     <slot {mouseX} {magnification} {distance}>
-      <!-- Your Content -->
-      Default
     </slot>
   </div>
 </Motion>
