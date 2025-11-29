@@ -3,9 +3,9 @@
 	import '../app.css';
 	import { ModeWatcher } from 'mode-watcher';
 	import favicon from '$lib/assets/favicon.ico';
-	import NavBar from '$lib/components/nav-bar.svelte';
+	import NavBar from '$lib/components/navigation/nav-bar.svelte';
 	import { Toaster } from '$lib/components/ui/sonner';
-	import DockNavBar from '$lib/components/ui/dock/nav-dock.svelte';
+	import DockNavBar from '$lib/components/navigation/nav-dock.svelte';
 	import NavBarData from '$lib/data/nav-bar';
 
 	let { children } = $props();

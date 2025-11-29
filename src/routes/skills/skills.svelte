@@ -1,11 +1,10 @@
 <script lang='ts'>
 	import TitledPage from '$lib/components/ui/custom-components/titled-page.svelte';
-	import Muted from '$lib/components/typography/muted.svelte';
 	import FancyCard from '$lib/components/ui/custom-components/fancy-card.svelte';
 	import { Separator } from '$lib/components/ui/separator';
 	import { CardContent, CardTitle } from '$lib/components/ui/card';
 	import SkillsData, { groupByCategory } from '$lib/data/skills';
-	import TextShine from './typography/text-shine.svelte';
+	import TextShine from '$lib/components/typography/text-shine.svelte';
 
 	const groups = groupByCategory('');
 </script>

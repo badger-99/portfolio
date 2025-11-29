@@ -1,5 +1,5 @@
 <script>
-	import Experience from '$lib/components/experience.svelte';
+	import Experience from './experience.svelte';
 </script>
 
 <section>
