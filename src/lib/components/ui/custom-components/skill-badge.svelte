@@ -11,7 +11,7 @@
 
     <Tooltip.Trigger class="group">
       <div>
-        <Button size="icon" variant="outline" class='dark:bg-muted/75 hover:dark:bg-transparent'>
+        <Button size="icon" variant="outline" >
           <img
 					class="size-[18px] grayscale-[0.5] group-hover:grayscale-0"
 					src={skill.logo}
