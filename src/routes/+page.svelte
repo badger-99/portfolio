@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import Home from '$lib/components/home.svelte';
+</script>
+
+<main class="flex h-fit flex-1 snap-y snap-mandatory flex-col px-2">
+	<Home />
+</main>
