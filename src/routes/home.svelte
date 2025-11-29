@@ -9,7 +9,6 @@
 	import BaseData from '$lib/data/base';
 	import avatar from '$lib/assets/my_picture.jpg';
 	import H2 from '$lib/components/typography/h2.svelte';
-	import TitledPage from '$lib/components/ui/custom-components/titled-page.svelte';
 	import Title from '$lib/components/ui/custom-components/title.svelte';
 	import Cube from '$lib/components/ui/custom-components/cube.svelte';
 
@@ -40,14 +39,14 @@
 						</div>
 						<img src={typingSvgMed} alt="typing animation" class="mx-auto block lg:hidden" />
 						<img src={typingSvgMed2} alt="typing animation" class="mx-auto hidden lg:block" />
-						<div class="flex flex-row gap-1">
+						<div class="flex flex-row gap-3">
 							{#each HomeData.hero.links as item}
 								<a href={item.href} target="_blank">
 									<Tooltip.Provider>
 										<Tooltip.Root>
 											<Tooltip.Trigger>
-												<Button variant="outline" size="icon" class="border border-foreground">
-													<Icon data={item.icon} className="text-lg" />
+												<Button variant="outline" size="icon-lg" class="border border-foreground">
+													<Icon data={item.icon} style="width: 26px; height: 26px;" />
 												</Button>
 											</Tooltip.Trigger>
 											<Tooltip.Content side="bottom">{item.label}</Tooltip.Content>
