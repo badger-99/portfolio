@@ -42,6 +42,43 @@ const items: Array<Project> = [
 				src: 'src/lib/assets/screenshots/stresstest/Screenshot-4.png'
 			}
 		]
+	},
+	{
+		slug: 'svelte-portfolio',
+		color: 'orange',
+		description:
+			"Personal Portfolio",
+		shortDescription: 'This portolio website - incase you like it and want to make your one based on it! :)',
+		links: [
+			{
+				to: 'https://github.com/badger-99/svelte-portfolio',
+				label: 'Source Code',
+				newTab: true,
+				icon: github
+			}
+		],
+		logo: Assets.Svelte,
+		name: 'Svelte Portfolio',
+		skills: getSkills('svelte', 'ts'),
+		type: 'Website',
+		screenshots: [
+			{
+				label: 'screen 1',
+				src: 'src/lib/assets/screenshots/stresstest/Screenshot-1.png'
+			},
+			{
+				label: '2',
+				src: 'src/lib/assets/screenshots/stresstest/Screenshot-2.png'
+			},
+			{
+				label: '3',
+				src: 'src/lib/assets/screenshots/stresstest/Screenshot-3.png'
+			},
+			{
+				label: '4',
+				src: 'src/lib/assets/screenshots/stresstest/Screenshot-4.png'
+			}
+		]
 	}
 ];
 
