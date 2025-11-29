@@ -14,7 +14,7 @@
 >
   <h1
     use:motion
-    class="bg-[linear-gradient(110deg,#404040,35%,#fff,50%,#404040,75%,#404040)] bg-size-[200%_100%] bg-clip-text text-base font-medium text-transparent"
+    class="bg-[linear-gradient(110deg,#404040,35%,#fff,50%,#404040,75%,#404040)] bg-size-[200%_100%] bg-clip-text text-base font-medium text-muted-foreground/70"
   >
     <slot>Generating Code..</slot>
   </h1>

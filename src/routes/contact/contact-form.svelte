@@ -66,7 +66,7 @@
 		<Form.Field {form} name="name">
 			<Form.Control>
 				{#snippet children({ props })}
-					<Input placeholder="Name" {...props} bind:value={$formData.name} required />
+					<Input class='border border-muted-foreground' placeholder="Name" {...props} bind:value={$formData.name} required />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
@@ -75,7 +75,7 @@
 		<Form.Field {form} name="email">
 			<Form.Control>
 				{#snippet children({ props })}
-					<Input placeholder="Email" {...props} bind:value={$formData.email} required />
+					<Input class='border border-muted-foreground' placeholder="Email" {...props} bind:value={$formData.email} required />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
@@ -84,7 +84,7 @@
 		<Form.Field {form} name="subject">
 			<Form.Control>
 				{#snippet children({ props })}
-					<Input placeholder="Subject (optional)" {...props} bind:value={$formData.subject} />
+					<Input class='border border-muted-foreground' placeholder="Subject (optional)" {...props} bind:value={$formData.subject} />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
@@ -94,7 +94,7 @@
 			<Form.Control>
 				{#snippet children({ props })}
 					<Textarea
-						class="h-60 resize-none overflow-y-auto"
+						class="h-60 resize-none overflow-y-auto border border-muted-foreground"
 						placeholder="Type your message here."
 						{...props}
 						bind:value={$formData.message}

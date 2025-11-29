@@ -1,11 +1,10 @@
 <script lang='ts'>
 	import TitledPage from '$lib/components/ui/custom-components/titled-page.svelte';
-	import Muted from '$lib/components/typography/muted.svelte';
 	import FancyCard from '$lib/components/ui/custom-components/fancy-card.svelte';
 	import { Separator } from '$lib/components/ui/separator';
 	import { CardContent, CardTitle } from '$lib/components/ui/card';
 	import SkillsData, { groupByCategory } from '$lib/data/skills';
-	import TextShine from './typography/text-shine.svelte';
+	import TextShine from '$lib/components/typography/text-shine.svelte';
 
 	const groups = groupByCategory('');
 </script>
@@ -15,9 +14,9 @@
 		{#each groups as group (group.category.slug)}
 			<div class="flex flex-col gap-6">
 				<div class="flex flex-row items-center gap-2">
-					<Separator data-slot={'horizontal'} class="data-[orientation=horizontal]:w-[50px]" />
+					<Separator data-slot={'horizontal'} class="data-[orientation=horizontal]:w-[50px] border border-muted-foreground" />
 					<TextShine>{group.category.name}</TextShine>
-					<Separator data-slot={'horizontal'} class="flex-1" />
+					<Separator data-slot={'horizontal'} class="flex-1  border border-muted-foreground" />
 				</div>
 				<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 					{#each group.items as item (item.slug)}

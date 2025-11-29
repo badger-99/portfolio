@@ -16,7 +16,7 @@
 	const { project }: { project: Project } = $props();
 </script>
 
-<FancyCard color={project.color} class="flex h-full flex-col" href={`/projects/${project.slug}`}>
+<FancyCard color={project.color} class="flex h-full flex-col">
 	<CardHeader class="flex w-full flex-col gap-4 space-y-1.5 p-6 pb-0">
 		<Avatar.Root class="size-10">
 			<Avatar.Fallback>

@@ -2,8 +2,8 @@
   import NavBarData from '$lib/data/nav-bar';
   import { Icon } from 'svelte-awesome';
   import * as Tooltip from "$lib/components/ui/tooltip";
-  import Dock from "./dock.svelte";
-  import DockIcon from "./dock-icon.svelte";
+  import Dock from "../ui/dock/dock.svelte";
+  import DockIcon from "../ui/dock/dock-icon.svelte";
   import { page } from '$app/state';
 </script>
 

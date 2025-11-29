@@ -1,5 +1,6 @@
 <script>
-	import Experience from '$lib/components/experience.svelte';
+	import Experience from './experience.svelte';
+	export const prerender = true;
 </script>
 
 <section>
