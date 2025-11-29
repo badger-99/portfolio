@@ -26,25 +26,25 @@ export const actions: Actions = {
 		const email = form.data.email;
 		const subject = form.data.subject
 			? form.data.subject
-			: `Portfolio ContactMe message from ${name}`;
+			: `Portfolio message from ${name}`;
 		const message = form.data.message;
 
 		try {
-			const { data, error } = await resend.emails.send({
-				from: `${name} <my-portfolio@alfredm.me>`,
+			const { error } = await resend.emails.send({
+				from: `${name} <noreply@alfredm.me>`,
 				to: ['contact@alfredm.me'],
 				replyTo: `${email}`,
 				subject: `${subject}`,
 				html: `<div>${message}</div>`
 			});
-
+			
 			if (error) {
-				return Response.json({ error }, { status: 500 });
+				return fail(500, { error, form });
 			}
 
-			return Response.json({ data });
+			return { form };
 		} catch (error) {
-			return Response.json({ error }, { status: 500 });
+			return fail(500, { error, form });
 		}
 	}
 };
