@@ -5,6 +5,7 @@
 	import { Separator } from '$lib/components/ui/separator';
 	import { CardContent, CardTitle } from '$lib/components/ui/card';
 	import SkillsData, { groupByCategory } from '$lib/data/skills';
+	import TextShine from './typography/text-shine.svelte';
 
 	const groups = groupByCategory('');
 </script>
@@ -15,7 +16,7 @@
 			<div class="flex flex-col gap-6">
 				<div class="flex flex-row items-center gap-2">
 					<Separator data-slot={'horizontal'} class="data-[orientation=horizontal]:w-[50px]" />
-					<Muted>{group.category.name}</Muted>
+					<TextShine>{group.category.name}</TextShine>
 					<Separator data-slot={'horizontal'} class="flex-1" />
 				</div>
 				<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">

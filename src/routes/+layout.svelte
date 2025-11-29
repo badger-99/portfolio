@@ -26,7 +26,7 @@
 <Toaster richColors duration={10000} closeButton position={'top-center'}  />
 <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
 	<div class="hidden lg:block"><NavBar /></div>
-	<div class="block lg:hidden fixed top-0 left-0 w-full z-30 pt-2 px-2 bg-linear-to-b from-black from-30% to-transparent">
+	<div class="block lg:hidden fixed top-0 left-0 w-full z-30 pt-3 pl-3 bg-linear-to-b from-black from-30% to-transparent">
 		<div class="invert dark:invert-0">
 		<a href="/">
 			<img alt="header logo" src={NavBarData.left.icon} width="60" />

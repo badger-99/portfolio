@@ -9,7 +9,7 @@
 <Title {title} />
 
 	<ResponsiveContainer className="flex flex-col flex-1 pb-8 mx-auto">
-		<H1 className="text-center pt-4 pb-16">{title}</H1>
+		<H1 className="text-center pt-8 pb-16">{title}</H1>
 		<div class="flex flex-1 flex-col gap-5 px-8 mb-25">
 			<slot />
 		</div>
