@@ -81,6 +81,15 @@
 			<Form.FieldErrors />
 		</Form.Field>
 
+		<Form.Field {form} name="subject">
+			<Form.Control>
+				{#snippet children({ props })}
+					<Input placeholder="Subject (optional)" {...props} bind:value={$formData.subject} />
+				{/snippet}
+			</Form.Control>
+			<Form.FieldErrors />
+		</Form.Field>
+
 		<Form.Field {form} name="message">
 			<Form.Control>
 				{#snippet children({ props })}
