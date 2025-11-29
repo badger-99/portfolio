@@ -1,5 +1,6 @@
 <script lang='ts'>
-	import Skills from "$lib/components/skills.svelte";
+	import Skills from "./skills.svelte";
+	export const prerender = true;
 </script>
 
 <section>

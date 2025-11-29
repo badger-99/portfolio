@@ -31,8 +31,9 @@ export const actions: Actions = {
 
 		try {
 			const { data, error } = await resend.emails.send({
-				from: `${name} <${email}>`,
-				to: ['delivered@resend.dev'],
+				from: `${name} <my-portfolio@alfredm.me>`,
+				to: ['contact@alfredm.me'],
+				replyTo: `${email}`,
 				subject: `${subject}`,
 				html: `<div>${message}</div>`
 			});

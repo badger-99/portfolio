@@ -1,8 +1,7 @@
 <script>
 	import TitledPage from '$lib/components/ui/custom-components/titled-page.svelte';
-	import H1 from '$lib/components/typography/h1.svelte';
 	import ProjectsData from '$lib/data/projects';
-	import Projectcard from './ui/custom-components/project-card.svelte';
+	import Projectcard from '$lib/components/ui/custom-components/project-card.svelte';
 </script>
 
 <TitledPage title={ProjectsData.title}>
