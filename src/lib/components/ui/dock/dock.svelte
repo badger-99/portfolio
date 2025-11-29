@@ -13,7 +13,7 @@
   let className: DockProps["className"] = undefined;
   export { className as class };
   export let magnification: DockProps["magnification"] = 60;
-  export let distance: DockProps["distance"] = 140;
+  export let distance: DockProps["distance"] = 0;
   export let direction: DockProps["direction"] = "middle";
 
   const dockVariants = cva(
