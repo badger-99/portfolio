@@ -24,20 +24,18 @@ export const actions: Actions = {
 		const resend = new Resend(RESEND_API_KEY);
 		const name = form.data.name;
 		const email = form.data.email;
-		const subject = form.data.subject
-			? form.data.subject
-			: `Portfolio message from ${name}`;
+		const subject = form.data.subject ? form.data.subject : `Portfolio message from ${name}`;
 		const message = form.data.message;
 
 		try {
 			const { error } = await resend.emails.send({
 				from: `${name} <noreply@alfredm.me>`,
-				to: ['contact@alfredm.me'],
+				to: ['hello@alfredm.me'],
 				replyTo: `${email}`,
 				subject: `${subject}`,
 				html: `<div>${message}</div>`
 			});
-			
+
 			if (error) {
 				return fail(500, { error, form });
 			}

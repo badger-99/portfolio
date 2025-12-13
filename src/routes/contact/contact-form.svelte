@@ -34,11 +34,11 @@
 			if (result.type === 'failure') {
 				toast.error('Oops! Looks like something went wrong.', {
 					description:
-						'You can send me an email at contact@alfredm.me, or click the button to use your app.',
+						'You can send me an email at hello@alfredm.me, or click the button to use your app.',
 					action: {
 						label: 'Email Me',
 						onClick: () => {
-							window.location.href = 'mailto:contact@alfredm.me';
+							window.location.href = 'mailto:hello@alfredm.me';
 						}
 					},
 					duration: Infinity
@@ -50,11 +50,11 @@
 			loading = false;
 			toast.error('Oops! Looks like something went wrong.', {
 				description:
-					'You can send me an email at contact@alfredm.me, or click the button to use your app.',
+					'You can send me an email at hello@alfredm.me, or click the button to use your app.',
 				action: {
 					label: 'Email Me',
 					onClick: () => {
-						window.location.href = 'mailto:contact@alfredm.me';
+						window.location.href = 'mailto:hello@alfredm.me';
 					}
 				},
 				duration: Infinity
@@ -130,7 +130,7 @@
 			>{loading ? 'Submitting...' : 'Submit'}</Form.Button
 		>
 
-		<div class="flex flex-row gap-3 mx-auto mt-9">
+		<div class="mx-auto mt-9 flex flex-row gap-3">
 			{#each HomeData.hero.links.slice(0, -1) as item}
 				<a href={item.href} target="_blank">
 					<Tooltip.Provider>
