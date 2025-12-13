@@ -75,7 +75,7 @@
 				<div
 					class="prose text-md dark:prose-invert max-w-xl font-sans text-pretty text-muted-foreground"
 				>
-					Feel free to explore my projects, see where I've worked, or drop me a message.
+					Feel free to <a href='/projects' class="home-link">explore my projects</a>, <a href='/experience' class="home-link">see where I've worked</a>, or <a href='/contact' class="home-link">drop me a message</a>.
 				</div>
 			</div>
 		</ResponsiveContainer>
@@ -84,3 +84,20 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.home-link {
+  color: #60a5fa; /* text-blue-400 */
+  transition: color 300ms;
+}
+
+/* lg: breakpoint (Tailwind lg = min-width: 1024px) */
+@media (min-width: 1024px) {
+  .home-link {
+    color: var(--foreground); /* text-foreground */
+  }
+	.home-link:hover {
+		color: #60a5fa; /* hover:text-blue-400 */
+	}
+}
+</style>
