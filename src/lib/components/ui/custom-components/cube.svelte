@@ -101,6 +101,7 @@
 		border-radius: 35%;
 		transform: rotateX(60deg);
 		filter: blur(35px);
+		display: none;
 	}
 
 	/* Keyframes */
@@ -126,7 +127,7 @@
 		}
 	}
 
-	@media screen and (min-width: 860px) {
+	@media screen and (min-width: 1024px) {
 		/* spinner origin / offsets adjusted by 40px */
 		#cube-container #cube-spinner {
 			transform-origin: 60px 60px 0;
@@ -152,5 +153,11 @@
 		#cube-container #cube-spinner #face6 {
 			transform: rotateX(-90deg) translateZ(60px);
 		}
+	}
+
+	@media (min-width: 1024px) {
+#cube-container #shadow {
+		display: block;
+	}
 	}
 </style>

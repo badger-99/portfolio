@@ -21,7 +21,7 @@
 <Title title={'Home'} />
 
 <section class="flex items-center justify-center mb-25 lg:mt-16">
-	<div class="flex flex-row justify-between lg:min-w-4xl">
+	<div class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between lg:min-w-4xl">
 		<ResponsiveContainer className="flex flex-col justify-center gap-16 max-w-2xl lg:flex-1 lg:w-full">
 			<div
 				class="flex flex-1 flex-col items-center justify-center gap-8 px-14 lg:flex-row lg:justify-between"
@@ -79,7 +79,7 @@
 				</div>
 			</div>
 		</ResponsiveContainer>
-		<div class="relative hidden lg:block">
+		<div class="relative max-lg:mt-20 max-lg:mb-50">
 			<Cube />
 		</div>
 	</div>
