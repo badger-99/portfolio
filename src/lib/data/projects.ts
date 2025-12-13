@@ -46,9 +46,9 @@ const items: Array<Project> = [
 	{
 		slug: 'svelte-portfolio',
 		color: 'orange',
-		description:
-			"Personal Portfolio",
-		shortDescription: 'This portolio website - incase you like it and want to make your one based on it! :)',
+		description: 'Personal Portfolio',
+		shortDescription:
+			'This portolio website - incase you like it and want to make your one based on it! :)',
 		links: [
 			{
 				to: 'https://github.com/badger-99/svelte-portfolio',
@@ -59,7 +59,7 @@ const items: Array<Project> = [
 		],
 		logo: Assets.Svelte,
 		name: 'Svelte Portfolio',
-		skills: getSkills('svelte', 'ts'),
+		skills: getSkills('svelte', 'ts', 'tailwindcss'),
 		type: 'Website',
 		screenshots: [
 			{
@@ -79,6 +79,31 @@ const items: Array<Project> = [
 				src: 'src/lib/assets/screenshots/stresstest/Screenshot-4.png'
 			}
 		]
+	},
+	{
+		slug: 'workspace-reservation',
+		color: 'red',
+		description: 'Collaborative Project',
+		shortDescription:
+			'Back-end half of a fullstack project that allows coworking space owners to manage their workspaces, and users to make bookings.',
+		links: [
+			{
+				to: 'https://github.com/badger-99/workspace-reservation-back-end',
+				label: 'Source Code',
+				newTab: true,
+				icon: github
+			},
+			{
+				to: 'https://github.com/Zilola-Nazarova/workspace-reservation-front-end',
+				label: 'Front-end repo',
+				newTab: true,
+				icon: github
+			}
+		],
+		logo: Assets.Unknown,
+		name: 'Workspace Reservation',
+		skills: getSkills('ruby', 'rails', 'rspec', 'swagger'),
+		type: 'Collaborative Project'
 	}
 ];
 
