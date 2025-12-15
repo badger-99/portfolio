@@ -9,7 +9,6 @@
 	import BaseData from '$lib/data/base';
 	import avatar from '$lib/assets/my_picture.jpg';
 	import H2 from '$lib/components/typography/h2.svelte';
-	import Title from '$lib/components/ui/custom-components/title.svelte';
 	import Cube from '$lib/components/ui/custom-components/cube.svelte';
 
 	const typingSvgMed =
@@ -18,7 +17,9 @@
 		'https://readme-typing-svg.demolab.com?font=system-ui+Avenir+Helvetica+arial+sans-serif&weight=500&size=33&height=50&duration=4000&pause=1000&color=A1A1A1&center=false&random=false&width=395&lines=Front-end+Fixer;Back-end+Builder;Full+Stack+Developer';
 </script>
 
-<Title title={'Home'} />
+<svelte:head>
+	<title>{`${BaseData.meta}`}</title>
+</svelte:head>
 
 <section class="flex items-center justify-center mb-25 lg:mt-16">
 	<div class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between lg:min-w-4xl">

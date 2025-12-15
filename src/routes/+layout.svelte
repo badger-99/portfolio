@@ -13,7 +13,7 @@
 
 <svelte:head>
 	<title>Alfred M.</title>
-	<meta name="description" content="Software Engineer & Developer." />
+	<meta name="description" content="Software Developer." />
 	<link
 		rel="stylesheet"
 		type="text/css"
