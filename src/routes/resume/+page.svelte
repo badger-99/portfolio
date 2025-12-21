@@ -2,7 +2,6 @@
 	import { TitledPage } from '$lib/components';
 	import ResumeData from '$lib/data/resume';
 	import { buttonVariants } from '$lib/components/ui/button';
-	import { PdfViewer } from 'svelte-pdf-simple';
 </script>
 
 <TitledPage title={ResumeData.title}>
