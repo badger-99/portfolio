@@ -46,7 +46,7 @@
 									<Tooltip.Provider>
 										<Tooltip.Root>
 											<Tooltip.Trigger>
-												<Button variant="outline" size="icon-lg" class="border border-foreground">
+												<Button variant="outline" size="icon-lg" class="border border-foreground cursor-pointer hover:text-blue-600">
 													<Icon data={item.icon} style="width: 26px; height: 26px;" />
 												</Button>
 											</Tooltip.Trigger>
