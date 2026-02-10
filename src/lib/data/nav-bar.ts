@@ -4,7 +4,7 @@ import cube from 'svelte-awesome/icons/cube';
 import cubes from 'svelte-awesome/icons/cubes';
 import briefcase from 'svelte-awesome/icons/briefcase';
 import envelopeO from 'svelte-awesome/icons/envelopeO';
-import fileTextO from 'svelte-awesome/icons/fileTextO';
+// import fileTextO from 'svelte-awesome/icons/fileTextO';
 import type { IconData } from 'svelte-awesome/components/Icon.svelte';
 
 
@@ -20,7 +20,7 @@ const items: Array<{
 	{ title: 'Skills', icon: cubes, href: '/skills' },
 	{ title: 'Experience', icon: briefcase, href: '/experience' },
 	{ title: 'Contact Me', icon: envelopeO, href: '/contact' },
-	{ title: 'Resumé', icon: fileTextO, href: '/resume' }
+	// { title: 'Resumé', icon: fileTextO, href: '/resume' }
 ];
 
 const NavBarData = { left, items };
