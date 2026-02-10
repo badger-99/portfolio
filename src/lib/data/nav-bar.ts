@@ -16,9 +16,9 @@ const items: Array<{
 	href: string;
 }> = [
 	{ title: 'Home', icon: user, href: '/' },
-	{ title: 'Projects', icon: cube, href: '/projects' },
 	{ title: 'Skills', icon: cubes, href: '/skills' },
 	{ title: 'Experience', icon: briefcase, href: '/experience' },
+	{ title: 'Projects', icon: cube, href: '/projects' },
 	{ title: 'Contact Me', icon: envelopeO, href: '/contact' },
 	// { title: 'Resumé', icon: fileTextO, href: '/resume' }
 ];
