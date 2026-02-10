@@ -76,7 +76,7 @@
 				<div
 					class="prose text-md dark:prose-invert max-w-xl font-sans text-pretty text-muted-foreground"
 				>
-					Feel free to <a href='/projects' class="home-link">explore my projects</a>, <a href='/experience' class="home-link">see where I've worked</a>, or <a href='/contact' class="home-link">drop me a message</a>.
+					Take a look around — <a href='/projects' class="home-link">check out my projects</a>, <a href='/experience' class="home-link">see where I've worked</a>, or <a href='/contact' class="home-link">say hello</a>.
 				</div>
 			</div>
 		</ResponsiveContainer>

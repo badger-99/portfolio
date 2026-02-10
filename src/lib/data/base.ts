@@ -4,7 +4,7 @@ const initials = 'AM'
 const meta = 'Alfred M.'
 const title = 'Software Developer';
 const about =
-	"I build web applications with front-end interfaces and back-end systems that fit together naturally, making sure everything feels smooth and works the way it should. Most days it's with a cup of coffee nearby, sometimes with music in the background — but always with the same goal: turning ideas into something real.";
+	"I'm a full-stack developer who likes building things that just work — where the interface feels right and the systems behind it hold up. My goal is always the same: turning ideas into something real";
 
 const BaseData = {
 	firstName,
