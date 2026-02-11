@@ -126,7 +126,7 @@
 			<Form.FieldErrors />
 		</Form.Field>
 
-		<Form.Button class="mx-auto w-fit" disabled={loading}
+		<Form.Button class="mx-auto w-fit cursor-pointer hover:bg-blue-600 hover:text-white transition-colors duration-300" disabled={loading}
 			>{loading ? 'Submitting...' : 'Submit'}</Form.Button
 		>
 
@@ -136,7 +136,7 @@
 					<Tooltip.Provider>
 						<Tooltip.Root>
 							<Tooltip.Trigger>
-								<Button variant="outline" size="icon" class="border border-foreground">
+								<Button variant="outline" size="icon" class="border border-foreground cursor-pointer hover:text-blue-600 transition-colors duration-300">
 									<Icon data={item.icon} style="width: 26px; height: 26px;" />
 								</Button>
 							</Tooltip.Trigger>
