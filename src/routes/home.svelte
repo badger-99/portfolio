@@ -12,9 +12,9 @@
 	import Cube from '$lib/components/ui/custom-components/cube.svelte';
 
 	const typingSvgMed =
-		'https://readme-typing-svg.demolab.com?font=system-ui+Avenir+Helvetica+arial+sans-serif&weight=500&size=33&height=50&duration=4000&pause=1000&color=A1A1A1&center=true&random=false&width=395&lines=Front-end+Fixer;Back-end+Builder;Full+Stack+Developer';
+		'https://readme-typing-svg.demolab.com?font=system-ui+Avenir+Helvetica+arial+sans-serif&weight=500&size=33&height=50&duration=4000&pause=1000&color=A1A1A1&center=true&random=false&width=395&lines=Front-end+Fixer;Back-end+Builder;Full+Stack+Engineer';
 	const typingSvgMed2 =
-		'https://readme-typing-svg.demolab.com?font=system-ui+Avenir+Helvetica+arial+sans-serif&weight=500&size=33&height=50&duration=4000&pause=1000&color=A1A1A1&center=false&random=false&width=395&lines=Front-end+Fixer;Back-end+Builder;Full+Stack+Developer';
+		'https://readme-typing-svg.demolab.com?font=system-ui+Avenir+Helvetica+arial+sans-serif&weight=500&size=33&height=50&duration=4000&pause=1000&color=A1A1A1&center=false&random=false&width=395&lines=Front-end+Fixer;Back-end+Builder;Full+Stack+Engineer';
 </script>
 
 <svelte:head>
@@ -46,7 +46,7 @@
 									<Tooltip.Provider>
 										<Tooltip.Root>
 											<Tooltip.Trigger>
-												<Button variant="outline" size="icon-lg" class="border border-foreground cursor-pointer hover:text-blue-600">
+												<Button variant="outline" size="icon-lg" class="border border-foreground cursor-pointer hover:text-blue-600 transition-color duration-300">
 													<Icon data={item.icon} style="width: 26px; height: 26px;" />
 												</Button>
 											</Tooltip.Trigger>
